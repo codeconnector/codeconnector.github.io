@@ -1,0 +1,10 @@
+﻿.animated {
+	visibility: visible;
+}
+
+.default-button,
+.sm-button,
+.border-button,
+.border-sm-button  {
+	display: inline-block !important;
+}
