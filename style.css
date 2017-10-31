@@ -234,7 +234,7 @@ p.header-lead {
 @media screen and (max-width:768px){
 
 	p.header-lead {
-		font-size: 25px;
+		font-size: 20px;
 		line-height: 35px;
 		font-weight: 400;
 		margin-right: 0;
