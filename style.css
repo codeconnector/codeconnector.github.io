@@ -2619,7 +2619,7 @@ div.flexslider:hover .flex-direction-nav .flex-next:hover {
 
 }
 
-.no-interact-div {
+.div-plain {
 	padding: 20px;
 	border-radius: 20px;
 	background-color: white;
