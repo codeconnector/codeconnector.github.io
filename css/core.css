@@ -39,6 +39,37 @@ img.rounded {
   border-radius: .5rem !important;
 }
 
+/* Preloader */
+
+.preloader {
+  position: fixed;
+  background: #8f13d8;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+  overflow: hidden;
+}
+
+.preloader .counter {
+    position: absolute;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 7rem;
+    font-weight: 900;
+    color: #fff;
+    text-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+
+.preloader .loader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-image: url("../content/images/meetups/purple/5by7/5.jpg");
+}
+
 /* Lists */
 
 ol.custom { 
@@ -110,7 +141,7 @@ a.btn:hover {
 
 .btn-primary {
   background-color: #8f13d8;
-  border-color: #8F13D8;
+  border-color: rgb(206, 194, 212);
 }
 
 .btn-primary:active, .btn-primary:focus, .btn-primary:hover {
