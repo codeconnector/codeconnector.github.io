@@ -188,6 +188,11 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   border-radius: .5rem;
 }
 
+.card-footer {
+    border-top: 0;
+    background-color: #fff;
+}
+
 /* Selections */
 
 ::-moz-selection {
