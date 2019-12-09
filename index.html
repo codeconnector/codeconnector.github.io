@@ -20,7 +20,7 @@
 		<meta name="twitter:description" content="Connecting adults with free coding + career resources, workshops & experiences">
 		<meta name="twitter:image" content="content/link_preview.jpg">
 		<meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@codeconnective">
+    <meta name="twitter:site" content="@codeconnector_">
     
     <!-- Favicon -->
 		<link rel="shortcut icon" href="content/favicon.ico">
@@ -28,13 +28,12 @@
     <title>Code Connector</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <!-- Custom fonts for this template -->
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Raleway:900" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,600,700,900" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,600,900&display=swap" rel="stylesheet">
     <!-- Custom styles -->
     <link href="css/core.css" rel="stylesheet">
     <link href="css/primary.css" rel="stylesheet">
@@ -42,14 +41,7 @@
   </head>
 
   <body id="page-top">
-
-    <!-- Preloader -->
-
-    <div class="preloader">
-      <div class="loader"></div>
-      <div class="counter"></div>
-    </div>
-
+    
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
@@ -65,18 +57,18 @@
             </li>
             -->
             <li class="nav-item">
-              <a class="nav-link" href="learn.html">Learn</a>
+              <a class="nav-link" href="learn.html" data-target="#">Learn</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Events
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="memphis.html">Memphis</a>
-                <a class="dropdown-item" href="birmingham.html">Birmingham</a>
-                <a class="dropdown-item" href="knoxville.html">Knoxville</a>
-                <a class="dropdown-item" href="montgomery.html">Montgomery</a>
-                <a class="dropdown-item" href="northmississippi.html">North Mississippi</a>
+                <a class="dropdown-item disabled" href="learn.html" data-target="#">Memphis</a>
+                <a class="dropdown-item disabled" href="learn.html" data-target="#">Birmingham</a>
+                <a class="dropdown-item disabled" href="learn.html" data-target="#">Lehigh Valley</a>
+                <a class="dropdown-item disabled" href="learn.html" data-target="#">Knoxville</a>
+                <a class="dropdown-item disabled" href="learn.html" data-target="#">North Mississippi</a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" data-toggle="modal" data-target="#meetupRequest" href="#">Start a meetup</a>
               </div>
@@ -86,13 +78,13 @@
                 Support
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="volunteer.html">Get involved</a>
-                <a class="dropdown-item" href="sponsor.html">Through sponsorship</a>
-                <a class="dropdown-item" href="assistance.html">Receive meetup assistance</a>
+                <a class="dropdown-item" href="volunteer.html" data-target="#">Get involved</a>
+                <a class="dropdown-item" href="sponsor.html" data-target="#">Through sponsorship</a>
+                <a class="dropdown-item" href="assistance.html" data-target="#">Receive meetup assistance</a>
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
+              <a class="nav-link" href="about.html" data-target="#">About</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
@@ -122,10 +114,14 @@
         <source src="content/videos/workshop1.mp4" type="video/mp4">
       </video>
       <div class="container h-100">
-        <div class="d-flex h-100 text-center align-items-center">
+        <div class="d-flex h-100 align-items-center">
           <div class="w-100 text-white">
-            <h1 class="header">Want to learn about tech or code?</h1>
-            <p class="subheader d-none d-md-flex">We're here to help you get connected with mentors, meetups, communities, education, and companies that have your best interest in mind</p>
+            <h1>Want to learn about tech or code?</h1>
+            <div class="row d-none d-md-flex">
+              <div class="col-lg-9 col-xl-8">
+                <p class="pt-3">We're here to help you get connected with mentors, meetups, communities, education, and companies that have your best interest in mind.</p>
+              </div>
+            </div>
             <a class="btn btn-light btn-lg mt-4 js-scroll-trigger shadow" href="#service">Learn more</a>
           </div>
         </div>
@@ -140,7 +136,7 @@
             <div class="card bg-dark text-white">
               <img src="content/images/people/6.jpg" class="card-img">
               <div class="card-img-overlay d-flex align-items-start justify-content-center">
-                <h1 class="mt-lg-4 challenge">Learning how to use tech or code<br>can be <span id="typed"></span> journey</h1>
+                <h2 class="mt-lg-4 mx-lg-5 challenge">Learning how to use tech or code can be <span id="typed"></span>journey</h1>
               </div>
             </div>
           </div>
@@ -158,55 +154,63 @@
         </div>
         <div class="row pt-5 text-center">
           <div class="col-sm-6 col-lg-3 pb-4 mb-md-0">
-            <div class="card shadow">
+            <div class="card shadow h-100">
               <div class="card-body">
                 <span class="fa-stack fa-3x">
                   <i class="fas fa-circle fa-stack-2x text-primary"></i>
                   <i class="fas fa-hands-helping fa-stack-1x fa-inverse"></i>
                 </span>
                 <h4 class="mt-4">Assistance</h4>
-                <p class="text-muted mb-4">We've built and are continuing to build a network of local and regional mentors that are excited to help you along the way.</p>
-                <a class="btn btn-primary" href="#">Receive</a>
+                <p class="text-muted mt-4">We've built and are continuing to build a network of local and regional mentors that are excited to help you along the way.</p>                
+              </div>
+              <div class="card-footer">
+                <a class="btn btn-primary" href="assistance.html">Receive</a> 
               </div>
             </div>
           </div>
           <div class="col-sm-6 col-lg-3 pb-4 mb-md-0">
-            <div class="card shadow">
+            <div class="card shadow h-100">
               <div class="card-body">
                 <span class="fa-stack fa-3x">
                   <i class="fas fa-circle fa-stack-2x text-primary"></i>
                   <i class="fas fa-hammer fa-stack-1x fa-inverse"></i>
                 </span>
                 <h4 class="mt-4">Education</h4>
-                <p class="text-muted mb-4">Videos, bootcamps, recruiting agencies, college degree programs... there are so many options! We want you to get what you need and at a price you can afford.</p>
-                <a class="btn btn-primary" href="#">Start</a>
+                <p class="text-muted mt-4">Videos, bootcamps, recruiting agencies, college degree programs... there are so many options! We want you to get what you need and at a price you can afford.</p>                
+              </div>
+              <div class="card-footer">
+                <a class="btn btn-primary" href="learn.html">Start</a>   
               </div>
             </div>
           </div>
           <div class="col-sm-6 col-lg-3 pb-4 mb-md-0">
-            <div class="card shadow">
+            <div class="card shadow h-100">
               <div class="card-body">
                 <span class="fa-stack fa-3x">
                   <i class="fas fa-circle fa-stack-2x text-primary"></i>
                   <i class="fas fa-thumbs-up fa-stack-1x fa-inverse"></i>
                 </span>
                 <h4 class="mt-4">Opportunities</h4>
-                <p class="text-muted mb-4">What to land a new job? Want to build something that will change the world? Want to see if this stuff is right for you? No matter what, we want to see you progress.</p>
-                <a class="btn btn-primary" href="www.google.com">Find</a>
+                <p class="text-muted mt-4">What to land a new job? Want to build something that will change the world? Want to see if this stuff is right for you? No matter what, we want to see you progress.</p>                
               </div>
+              <div class="card-footer">
+                <a class="btn btn-primary" href="learn.html#online">Find</a> 
+              </div>                
             </div>
           </div>
           <div class="col-sm-6 col-lg-3 pb-4 mb-md-0">
-            <div class="card shadow">
+            <div class="card shadow h-100">
               <div class="card-body">
                 <span class="fa-stack fa-3x">
                   <i class="fas fa-circle fa-stack-2x text-primary"></i>
                   <i class="fas fa-users fa-stack-1x fa-inverse"></i>
                 </span>
                 <h4 class="mt-4">Community</h4>
-                <p class="text-muted mb-4">Whether through our local free meetups or online chat group, you've got a group that you can rely on and give back to.</p>
-                <a class="btn btn-primary" href="#">Join</a>
+                <p class="text-muted mt-4">Whether through our local free meetups or online chat group, you've got a group that you can rely on and give back to.</p>
               </div>
+              <div class="card-footer">
+                <a class="btn btn-primary" href="learn.html#online">Join</a> 
+              </div>                
             </div>
           </div>
         </div>
@@ -266,101 +270,62 @@
 
     <!-- Sponsors -->
     <section class="bg-purple-meetup1">
-      <div class="container">
-        <div class="row pb-5 mb-md-5">
+      <div class="container-fluid">
+        <div class="row pb-5">
           <div class="col-lg-12 text-center text-light">
-            <h1>Our amazing sponsors</h1>
+            <h2>These companies and teams have made our efforts possible</h2>
           </div>
         </div>
-        <div class="row mb-lg-5 d-flex justify-content-center">
-          <div class="col-3 col-sm-2 col-lg-1 pb-4 pb-lg-0 mx-lg-4 d-flex align-items-center">
-            <a href="https://knoxdevs.com" target="blank">
-              <img class="img-fluid" src="content/images/sponsors/knoxdevs-light.png" alt="">
-            </a>
-          </div>
-          <div class="col-8 col-md-7 col-lg-3 pb-4 pb-lg-0 mx-lg-4 d-flex align-items-center">
-            <a href="http://www.epicenter.com" target="blank">
-              <img class="img-fluid" src="content/images/sponsors/epicenter-light.png" alt="">
-            </a>
-          </div>
-          <div class="col-6 col-md-4 col-lg-2 pb-4 pb-lg-0 mx-lg-4 d-flex align-items-center">
-            <a href="https://www.meetup.com/base205/" target="blank">
-              <img class="img-fluid" src="content/images/sponsors/base-light.png" alt="">
-            </a>
-          </div>
-          <div class="col-3 col-md-2 col-lg-1 pb-4 pb-lg-0 mx-lg-4 d-flex align-items-center">
-            <a href="http://www.memphistechnology.org/" target="blank">
-              <img class="img-fluid" src="content/images/sponsors/memtech-light.png" alt="">
-            </a>
-          </div>
+        <div class="partner-logos">
+          <div class="slide"><img src="content/images/sponsors/base-light.png"></div>
+          <div class="slide"><img src="content/images/sponsors/einsteinbagels-light.gif"></div>
+          <div class="slide"><img src="content/images/sponsors/epicenter-light.png"></div>
+          <div class="slide"><img src="content/images/sponsors/memtech-light.gif"></div>
+          <div class="slide"><img src="content/images/sponsors/awaken-light.gif"></div>
+          <div class="slide"><img src="content/images/sponsors/lehighvalleytech-light.png"></div>
+          <div class="slide"><img src="content/images/sponsors/codecrew-light.gif"></div>
+          <div class="slide"><img src="content/images/sponsors/knoxdevs-light.gif"></div>
+          <div class="slide"><img src="content/images/sponsors/coworkingnight-light.png"></div>
+          <div class="slide"><img src="content/images/sponsors/innovationdepot-light.png"></div>
+          <div class="slide"><img src="content/images/sponsors/themarket-light.gif"></div>
+          <div class="slide"><img src="content/images/sponsors/cals-light.gif"></div>
+          <div class="slide"><img src="content/images/sponsors/universityofmemphis-light.gif"></div>
+          <div class="slide"><img src="content/images/sponsors/i85cyber-light.gif"></div>
+          <div class="slide"><img src="content/images/sponsors/kec-light.png"></div>
+          <div class="slide"><img src="content/images/sponsors/lbt-light.png"></div>
+          <div class="slide"><img src="content/images/sponsors/starbucks-light.gif"></div>
+          <div class="slide"><img src="content/images/sponsors/theemptycup-light.png"></div>
+          <div class="slide"><img src="content/images/sponsors/mpl-light.gif"></div>
         </div>
-        <div class="row mb-lg-4 d-flex justify-content-center">
-          <div class="col-7 col-lg-3 pb-4 pb-lg-0 mx-lg-4 d-flex align-items-center">
-            <a href="https://innovationdepot.org/" target="blank">
-              <img class="img-fluid" src="content/images/sponsors/innovationdepot-light.png" alt="">
-            </a>
-          </div>
-          <div class="col-3 col-md-2 col-lg-1 pb-4 pb-lg-0 mx-lg-2 d-flex align-items-center">
-            <a href="https://www.learnbuildteach.com/" target="blank">
-              <img class="img-fluid" src="content/images/sponsors/lbt-light.png" alt="">
-            </a>
-          </div>
-          <div class="col-6 col-md-4 col-lg-2 pb-4 pb-lg-0 mx-lg-4 d-flex align-items-center">
-            <a href="http://knoxec.com/" target="blank">
-              <img class="img-fluid" src="content/images/sponsors/theemptycup-light.png" alt="">
-            </a>
-          </div>
-          <div class="col-5 col-md-4 col-lg-2 pb-4 pb-lg-0 mx-lg-4 d-flex align-items-center">
-            <a href="https://coworkingnight.org/" target="blank">
-              <img class="img-fluid" src="content/images/sponsors/coworkingnight-light.png" alt="">
-            </a>
+        <div class="row pt-5 d-flex justify-content-center">
+          <div class="col-lg-6 text-center text-light">
+            <p>We're especially thankful to be supported by the awesome folks at <a href="https://memphistechnology.org/" target="_blank" class="text-white">Memphis Technology Foundation</a>.</p>
+            <button class="btn btn-outline-light mt-3" disabled>More info coming soon</button>
+            <!--
+            <a class="btn btn-light shadow mt-3 text-wrap" href="about.html">Learn about our partnership</a>
+            -->
           </div>
         </div>
       </div>
     </section>
 
     <!-- Contact -->
-    <section id="contact" class="bg-light">
+    <section id="contact" class="bg-dark">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h1>Send word our way</h1>
+        <div class="row d-flex justify-content-center">
+          <div class="col-lg-6 text-center">
+            <h1 class="text-light">Send word our way</h1>
+            <p class="pt-3 text-light">Whether you're needing assistance or just want to say hello, we'd love to hear form you.</p>
           </div>
         </div>
         <div class="row py-5 d-flex justify-content-center">
-          <div class="col-lg-5">
-            <div class="card shadow">
-              <div class="mx-5 my-3">
-                <form method="POST" action="https://formspree.io/hello@codeconnective.com">
-                  <input type="hidden" name="_subject" value="Home submission">
-                  <input type="text" name="_gotcha" style="display:none">
-                  <div class="form-group row align-items-center">
-                    <label class="col-form-label col-form-label-lg">Name <span class="text-danger">*</span></label>
-                    <input class="form-control form-control-lg" type="text" name="name" placeholder="Sally Smith">
-                  </div>
-                  <div class="form-group row align-items-center">
-                    <label class="col-form-label col-form-label-lg">Email <span class="text-danger">*</span></label>
-                    <input class="form-control form-control-lg" type="email" name="_replyto" placeholder="sally.smith@email.com">
-                  </div>
-                  <div class="form-group row align-items-center">
-                    <label class="col-form-label col-form-label-lg">Message</label>
-                    <textarea class="form-control" name="message" rows="3"></textarea>
-                  </div>
-                  <div class="form-group row justify-content-center align-items-center py-3">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" name="Enroll in the online community">
-                      <label class="form-check-label ml-3">Sign up for the online community</label>
-                    </div>
-                  </div>
-                  <div class="form-group row text-center">
-                    <div class="col-sm-12">
-                      <button type="submit" class="btn btn-lg btn-primary">Send</button>
-                    </div>
-                  </div>
-                  <input type="hidden" name="_next" value="thankyou.html">
-                </form>
-              </div>
-            </div>
+          <div class="col-lg-8 text-center text-white">
+            <a class="btn btn-primary btn-lg shadow mr-lg-3" href="http://m.me/codeconnector" target="_blank">
+              via Facebook
+            </a>
+            <a class="btn btn-primary btn-lg shadow" href="https://twitter.com/codeconnector_" target="_blank">
+              via Twitter
+            </a>
           </div>
         </div>
       </div>
@@ -376,12 +341,12 @@
           <div class="col-md-6">
             <ul class="list-inline social-buttons">
               <li class="list-inline-item">
-                <a href="https://www.facebook.com/codeconnective" target="blank">
+                <a href="https://www.facebook.com/codeconnector" target="blank">
                   <i class="fab fa-facebook-f"></i>
                 </a>
               </li>
               <li class="list-inline-item">
-                <a href="https://www.twitter.com/codeconnective" target="blank">
+                <a href="https://twitter.com/codeconnector_" target="blank">
                   <i class="fab fa-twitter"></i>
                 </a>
               </li>
@@ -391,7 +356,7 @@
                 </a>
               </li>
               <li class="list-inline-item">
-                <a href="https://www.eventbrite.com/o/code-connective-15650145492" target="blank">
+                <a href="https://www.eventbrite.com/o/code-connector-15650145492" target="blank">
                   <i class="fas fa-calendar-alt"></i>
                 </a>
               </li>
@@ -414,8 +379,9 @@
     </footer>
 
     <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
     <!-- Typed JavaScript -->
     <script src="js/typed.js"></script>
@@ -431,14 +397,13 @@
       });
     </script>
 
-    <!-- Preloader -->
-    <script src="js/preloader.js"></script>
-
     <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js" integrity="sha256-H3cjtrm/ztDeuhCN9I4yh4iN2Ybx/y1RM7rMmAesA0k=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
 
     <!-- Custom scripts for this template -->
     <script src="js/custom.js"></script>
+    <script src="js/partner-slider.js"></script>
 
   </body>
 

@@ -20,7 +20,7 @@
 		<meta name="twitter:description" content="Connecting adults with free coding + career resources, workshops & experiences">
 		<meta name="twitter:image" content="content/link_preview.jpg">
 		<meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@codeconnective">
+    <meta name="twitter:site" content="@codeconnector_">
     
     <!-- Favicon -->
 		<link rel="shortcut icon" href="content/favicon.ico">
@@ -28,10 +28,10 @@
     <title>Learn</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <!-- Custom fonts for this template -->
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Raleway:900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,600,700,900" rel="stylesheet">
 
@@ -42,13 +42,6 @@
   </head>
 
   <body id="page-top">
-
-    <!-- Preloader -->
-
-    <div class="preloader">
-      <div class="loader"></div>
-      <div class="counter"></div>
-    </div>
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
@@ -65,18 +58,18 @@
             </li>
             -->
             <li class="nav-item">
-              <a class="nav-link active" href="learn.html">Learn</a>
+              <a class="nav-link" href="learn.html" data-target="#">Learn</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Events
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="memphis.html">Memphis</a>
-                <a class="dropdown-item" href="birmingham.html">Birmingham</a>
-                <a class="dropdown-item" href="knoxville.html">Knoxville</a>
-                <a class="dropdown-item" href="montgomery.html">Montgomery</a>
-                <a class="dropdown-item" href="northmississippi.html">North Mississippi</a>
+                <a class="dropdown-item disabled" href="learn.html" data-target="#">Memphis</a>
+                <a class="dropdown-item disabled" href="learn.html" data-target="#">Birmingham</a>
+                <a class="dropdown-item disabled" href="learn.html" data-target="#">Lehigh Valley</a>
+                <a class="dropdown-item disabled" href="learn.html" data-target="#">Knoxville</a>
+                <a class="dropdown-item disabled" href="learn.html" data-target="#">North Mississippi</a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" data-toggle="modal" data-target="#meetupRequest" href="#">Start a meetup</a>
               </div>
@@ -86,13 +79,13 @@
                 Support
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="volunteer.html">Get involved</a>
-                <a class="dropdown-item" href="sponsor.html">Through sponsorship</a>
-                <a class="dropdown-item" href="assistance.html">Receive meetup assistance</a>
+                <a class="dropdown-item" href="volunteer.html" data-target="#">Get involved</a>
+                <a class="dropdown-item" href="sponsor.html" data-target="#">Through sponsorship</a>
+                <a class="dropdown-item" href="assistance.html" data-target="#">Receive meetup assistance</a>
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
+              <a class="nav-link" href="about.html" data-target="#">About</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
@@ -254,9 +247,9 @@
             <div class="card shadow">
               <div class="card-body">
                 <h4 class="pb-3">Tennessee</h4>
-                <a class="btn btn-primary btn-lg mb-3" href="#">Memphis</a>
+                <a class="btn btn-primary btn-lg mb-3" href="memphis.html">Memphis</a>
                 <br>
-                <a class="btn btn-primary btn-lg" href="#">Knoxville</a>
+                <a class="btn btn-primary btn-lg" href="knoxville.html">Knoxville</a>
               </div>
             </div>
           </div>
@@ -264,12 +257,20 @@
             <div class="card shadow">
               <div class="card-body">
                 <h4 class="pb-3">Alabama</h4>
-                <a class="btn btn-primary btn-lg mb-3" href="#">Birmingham</a>
+                <a class="btn btn-primary btn-lg mb-3" href="birmingham.html">Birmingham</a>
                 <br>
-                <a class="btn btn-primary btn-lg" href="#">Montgomery</a>
+                <a class="btn btn-primary btn-lg" href="montgomery.html">Montgomery</a>
               </div>
             </div>
           </div>
+          <div class="col-md-4 pb-4 mb-md-0">
+            <div class="card shadow">
+              <div class="card-body">
+                <h4 class="pb-3">Mississippi</h4>
+                <a class="btn btn-primary btn-lg mb-3" href="northmississippi.html">North Mississippi</a>
+              </div>
+            </div>
+          </div>            
         </div>
         <div class="row justify-content-center py-5">
           <div class="col-12">
@@ -286,7 +287,7 @@
                     <a class="btn btn-primary" href="http://www.facebook.com/codeconnective/events" target="_blank">Facebook</a>
                   </div>
                   <div class="col-sm-6 text-md-left">
-                    <a class="btn btn-primary" href="https://www.eventbrite.com/o/code-connective-15650145492" target="_blank">Eventbrite</a>
+                    <a class="btn btn-primary" href="https://www.eventbrite.com/o/code-connector-15650145492" target="_blank">Eventbrite</a>
                   </div>
                 </div>
               </div>
@@ -369,47 +370,22 @@
     </section>
 
     <!-- Contact -->
-    <section id="contact" class="bg-light">
+    <section id="contact" class="bg-dark">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h1>Send word our way</h1>
+        <div class="row d-flex justify-content-center">
+          <div class="col-lg-6 text-center">
+            <h1 class="text-light">Send word our way</h1>
+            <p class="pt-3 text-light">Whether you're needing assistance or just want to say hello, we'd love to hear form you.</p>
           </div>
         </div>
         <div class="row py-5 d-flex justify-content-center">
-          <div class="col-lg-5">
-            <div class="card shadow">
-              <div class="mx-5 my-3">
-                <form method="POST" action="https://formspree.io/hello@codeconnective.com">
-                  <input type="hidden" name="_subject" value="Home submission">
-                  <input type="text" name="_gotcha" style="display:none">
-                  <div class="form-group row align-items-center">
-                    <label class="col-form-label col-form-label-lg">Name <span class="text-danger">*</span></label>
-                    <input class="form-control form-control-lg" type="text" name="name" placeholder="Sally Smith">
-                  </div>
-                  <div class="form-group row align-items-center">
-                    <label class="col-form-label col-form-label-lg">Email <span class="text-danger">*</span></label>
-                    <input class="form-control form-control-lg" type="email" name="_replyto" placeholder="sally.smith@email.com">
-                  </div>
-                  <div class="form-group row align-items-center">
-                    <label class="col-form-label col-form-label-lg">Message</label>
-                    <textarea class="form-control" name="message" rows="3"></textarea>
-                  </div>
-                  <div class="form-group row justify-content-center align-items-center py-3">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" name="Enroll in the online community">
-                      <label class="form-check-label ml-3">Sign up for the online community</label>
-                    </div>
-                  </div>
-                  <div class="form-group row text-center">
-                    <div class="col-sm-12">
-                      <button type="submit" class="btn btn-lg btn-primary">Send</button>
-                    </div>
-                  </div>
-                  <input type="hidden" name="_next" value="thankyou.html">
-                </form>
-              </div>
-            </div>
+          <div class="col-lg-8 text-center text-white">
+            <a class="btn btn-primary btn-lg shadow mr-lg-3" href="http://m.me/codeconnector" target="_blank">
+              via Facebook
+            </a>
+            <a class="btn btn-primary btn-lg shadow" href="https://twitter.com/codeconnector_" target="_blank">
+              via Twitter
+            </a>
           </div>
         </div>
       </div>
@@ -425,12 +401,12 @@
           <div class="col-md-6">
             <ul class="list-inline social-buttons">
               <li class="list-inline-item">
-                <a href="https://www.facebook.com/codeconnective" target="blank">
+                <a href="https://www.facebook.com/codeconnector" target="blank">
                   <i class="fab fa-facebook-f"></i>
                 </a>
               </li>
               <li class="list-inline-item">
-                <a href="https://www.twitter.com/codeconnective" target="blank">
+                <a href="https://twitter.com/codeconnector_" target="blank">
                   <i class="fab fa-twitter"></i>
                 </a>
               </li>
@@ -440,7 +416,7 @@
                 </a>
               </li>
               <li class="list-inline-item">
-                <a href="https://www.eventbrite.com/o/code-connective-15650145492" target="blank">
+                <a href="https://www.eventbrite.com/o/code-connector-15650145492" target="blank">
                   <i class="fas fa-calendar-alt"></i>
                 </a>
               </li>
@@ -463,14 +439,12 @@
     </footer>
 
     <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
     <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-    <!-- Preloader -->
-    <script src="js/preloader.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js" integrity="sha256-H3cjtrm/ztDeuhCN9I4yh4iN2Ybx/y1RM7rMmAesA0k=" crossorigin="anonymous"></script>
     
     <!-- Custom scripts for this template -->
     <script src="js/custom.js"></script>
