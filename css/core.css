@@ -2,7 +2,8 @@
 
 body {
   overflow-x: hidden;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 500;
+  font-family: 'Source Code Pro', sans-serif;
 }
 
 p {
@@ -31,7 +32,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Source Code Pro', monospace;
   font-weight: 900;
 }
 
@@ -97,10 +98,10 @@ a.btn:hover {
 }
 
 .btn {
-  font-weight: 700;
+  font-weight: 900;
   border-radius: 10rem;
   padding: .5rem 2rem;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Source Code Pro', monospace;
 }
 
 .btn-xl {
@@ -110,7 +111,7 @@ a.btn:hover {
 
 .btn-primary {
   background-color: #8f13d8;
-  border-color: rgb(206, 194, 212);
+  border-color: #8f13d8;
 }
 
 .btn-primary:active, .btn-primary:focus, .btn-primary:hover {
@@ -160,6 +161,7 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 .card-footer {
     border-top: 0;
     background-color: #fff;
+    border-radius: 0 0 .5rem .5rem !important;
 }
 
 /* Selections */
@@ -195,15 +197,15 @@ img::-moz-selection {
 }
 
 #mainNav .navbar-toggler {
-  font-size: 15px;
-  font-weight: 700;
+  font-size: 16px;
+  font-weight: 900;
   right: 0;
   padding: 13px 25px;
   color: #000000;
   border: 0;
   border-radius: 5rem;
   background-color: #ffffff;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Source Code Pro', monospace;
 }
 
 #mainNav .navbar-brand {
@@ -219,12 +221,12 @@ img::-moz-selection {
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
-  font-size: 20px;
-  font-weight: 700;
+  font-size: 1.15rem;
+  font-weight: 900;
   padding: 0.75em 0;
   letter-spacing: 1px;
   color: #ffffff;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Source Code Pro', monospace;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link .dropdown-toggle.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
@@ -240,8 +242,8 @@ img::-moz-selection {
 }
 
 .dropdown-item {
-  font-weight: 700;
-  letter-spacing: .5px;
+  font-weight: 600;
+  font-family: 'Source Code Pro', monospace;
 }
 
 @media (max-width: 992px) {
@@ -533,30 +535,37 @@ img::-moz-selection {
 
 .bg-purple-meetup1 {
   background: url(../content/images/meetups/purple/5by7/7.jpg) #8f13d8 no-repeat center center/200vh scroll;
+  background-size: cover;
 }
 
 .bg-purple-meetup2 {
   background: url(../content/images/meetups/purple/5by7/8.jpg) #8f13d8 no-repeat center center/200vh scroll;
+  background-size: cover;
 }
 
 .bg-purple-leader1 {
   background: url(../content/images/meetups/purple/5by7/9.jpg) #8f13d8 no-repeat center center/200vh scroll;
+  background-size: cover;
 }
 
 .bg-purple-leader2 {
   background: url(../content/images/meetups/purple/5by7/1.jpg) #8f13d8 no-repeat center center/200vh scroll;
+  background-size: cover;
 }
 
 .bg-purple-convo1 {
   background: url(../content/images/meetups/purple/5by7/19a.jpg) #8f13d8 no-repeat center center/200vh scroll;
+  background-size: cover;
 }
 
 .bg-purple-convo2 {
   background: url(../content/images/meetups/purple/5by7/6.jpg) #8f13d8 no-repeat center center/200vh scroll;
+  background-size: cover;
 }
 
 .bg-purple-convo3 {
   background: url(../content/images/meetups/purple/5by7/5.jpg) #8f13d8 no-repeat center center/200vh scroll;
+  background-size: cover;
 }
 
 /* Team */
@@ -600,19 +609,19 @@ section#contact .form-control:focus {
 section#contact ::-webkit-input-placeholder {
   font-weight: 300;
   color: #ced4da;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Source Code Pro', monospace;
 }
 
 section#contact ::-moz-placeholder {
   font-weight: 300;
   color: #ced4da;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Source Code Pro', monospace;
 }
 
 section#contact :-ms-input-placeholder {
   font-weight: 300;
   color: #ced4da;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Source Code Pro', monospace;
 }
 
 /* Google Calendar */
@@ -637,7 +646,7 @@ footer span.copyright {
   font-size: 90%;
   line-height: 40px;
   text-transform: none;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Source Code Pro', monospace;
 }
 
 footer ul.quicklinks {
@@ -645,5 +654,134 @@ footer ul.quicklinks {
   line-height: 40px;
   margin-bottom: 0;
   text-transform: none;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Source Code Pro', monospace;
+}
+
+/* Slider */
+.slick-slide {
+  margin: 0px 20px;
+}
+
+.slick-slide img {
+  width: 75%;
+}
+
+.slick-slider
+{
+  position: relative;
+
+  display: block;
+  box-sizing: border-box;
+
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  -ms-touch-action: pan-y;
+      touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+  position: relative;
+
+  display: block;
+  overflow: hidden;
+
+  margin: 0;
+  padding: 0;
+}
+.slick-list:focus
+{
+  outline: none;
+}
+.slick-list.dragging
+{
+  cursor: pointer;
+  cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+  -webkit-transform: translate3d(0, 0, 0);
+     -moz-transform: translate3d(0, 0, 0);
+      -ms-transform: translate3d(0, 0, 0);
+       -o-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+  position: relative;
+  top: 0;
+  left: 0;
+
+  display: block;
+}
+.slick-track:before,
+.slick-track:after
+{
+  display: table;
+
+  content: '';
+}
+.slick-track:after
+{
+  clear: both;
+}
+.slick-loading .slick-track
+{
+  visibility: hidden;
+}
+
+.slick-slide
+{
+  display: none;
+  float: left;
+
+  height: 100%;
+  min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+  float: right;
+}
+.slick-slide img
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.slick-slide.slick-loading img
+{
+  display: none;
+}
+.slick-slide.dragging img
+{
+  pointer-events: none;
+}
+.slick-initialized .slick-slide {
+  float: inherit;
+  display: inline-block !important;
+  vertical-align: middle;
+}
+.slick-loading .slick-slide
+{
+  visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+  display: block;
+
+  height: auto;
+
+  border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+  display: none;
 }
