@@ -11,11 +11,11 @@ p {
 }
 
 a {
-  color: #8F13D8;
+  color: rgb(143, 19, 216);
 }
 
 a:hover {
-  color: rgba(255,255,255,.5);
+  color: rgba(143, 19, 216, 0.75);
 }
 
 .text-primary {
@@ -50,7 +50,6 @@ ol.custom > li {
   display: block;
 }
 ol.custom > li:before {
-  padding-right: 12px;
   margin-left: -30px;
   color: #8F13D8;
   font-weight: 900;
@@ -533,6 +532,12 @@ img::-moz-selection {
 
 /* Background */
 
+.bg-challenge {
+  background: url(../content/images/people/b&w/6.jpg) #8f13d8 no-repeat center center/200vh scroll;
+  background-size: cover;
+  padding: 200px 0;
+}
+
 .bg-purple-meetup1 {
   background: url(../content/images/meetups/purple/5by7/7.jpg) #8f13d8 no-repeat center center/200vh scroll;
   background-size: cover;
@@ -690,7 +695,7 @@ blockquote .small:before, blockquote footer:before, blockquote small:before {
     cursor: pointer;
     border: 1px solid #ccc;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    border-radius: 50%;
+    border-radius: 100%;
     opacity: 0.4;
     overflow: hidden;
     transition: all .4s ease-in;
