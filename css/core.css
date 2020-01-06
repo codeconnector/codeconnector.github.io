@@ -690,8 +690,8 @@ blockquote .small:before, blockquote footer:before, blockquote small:before {
 }
 
 .carousel-indicators li {
-    width: 45px;
-    height: 45px;
+    width: 30px;
+    height: 30px;
     cursor: pointer;
     border: 1px solid #ccc;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
@@ -703,8 +703,8 @@ blockquote .small:before, blockquote footer:before, blockquote small:before {
   text-indent: 0;
 }
 .carousel-indicators .active {
-    width: 60px;
-    height: 60px;
+    width: 45px;
+    height: 45px;
     opacity: 1;
     transition: all .2s;
 }
