@@ -3,8 +3,9 @@
   "private": true,
   "version": "1.0.0",
   "description": "Code Connector community website",
-  "main": "index.js",
   "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -16,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/codeconnector/codeconnective.github.io/issues"
   },
-  "homepage": "https://github.com/codeconnector/codeconnective.github.io#readme"
+  "homepage": "https://github.com/codeconnector/codeconnective.github.io#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.10.0"
+  }
 }
