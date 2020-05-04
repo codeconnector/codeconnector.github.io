@@ -1,9 +1,13 @@
 module.exports = function(eleventyConfig) {
-    eleventyConfig.addPassthroughCopy("js");
-    eleventyConfig.addPassthroughCopy("css");
-    eleventyConfig.addPassthroughCopy("content");
-    eleventyConfig.setTemplateFormats([
-      "njk",
-      "html"
-    ]);
-  };
+    eleventyConfig.addPassthroughCopy({
+        public: '.'
+    });
+    eleventyConfig.setTemplateFormats(['njk', 'html']);
+
+    return {
+        dir: {
+            input: 'src',
+            output: 'dist'
+        }
+    };
+};

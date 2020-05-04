@@ -1,4 +1,4 @@
 node_modules
 
-# 11ty build dir
-_site
+# 11ty build output dir
+dist
