@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
-
 		<!-- Meta Data -->
 		<meta http-equiv="content-type" content="text/html;charset=UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -25,7 +23,7 @@
     <!-- Favicon -->
 		<link rel="shortcut icon" href="/content/favicon.ico">
 
-    <title>Assistance</title>
+    <title>{{ title }}</title>
 
     <!-- Bootstrap core CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -37,12 +35,25 @@
 
     <!-- Custom styles -->
     <link href="/css/core.css" rel="stylesheet">
+    {% block styles %}
     <link href="/css/secondary.css" rel="stylesheet">
+    {% endblock %}
 
+    <!-- Bootstrap core JavaScript -->
+    <script defer src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- Plugin JavaScript -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js" integrity="sha256-H3cjtrm/ztDeuhCN9I4yh4iN2Ybx/y1RM7rMmAesA0k=" crossorigin="anonymous"></script>
+
+    <!-- Custom scripts for this template -->
+    <script defer src="/js/custom.js"></script>
+    {% block javascript %}
+    {% endblock %}
   </head>
 
   <body id="page-top">
-
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
@@ -89,7 +100,6 @@
         </div>
       </div>
     </nav>
-    
     <!-- Start A Meetup modal -->
     <div class="modal fade" id="meetupRequest" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 690px">
@@ -102,147 +112,9 @@
         </div>
       </div>
     </div>
-
-    <!-- Header -->
-    <header>
-      <div class="overlay"></div>
-      <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-        <source src="/content/videos/workshop2.mp4" type="video/mp4">
-      </video>
-      <div class="container h-100">
-        <div class="d-flex h-100 text-center align-items-center">
-          <div class="w-100 text-white">
-            <p class="subheader d-none d-md-inline">Want to improve the quality of your efforts?</p>
-            <h1 class="header my-md-2">We'd love to team up with you</h1>
-          </div>
-        </div>
-      </div>
-    </header>
-
-    <!-- Needs -->
-    <section id="needs" class="bg-light">
-      <div class="container">
-        <div class="row mb-md-5 pb-3">
-          <div class="col-lg-12 text-center">
-            <h1>How we help</h1>
-          </div>
-        </div>
-        <div class="row text-center justify-content-center">
-          <div class="col-md-6 col-lg-3 pb-4 mb-md-0">
-            <div class="card">
-              <div class="card-body">
-                <span class="fa-stack fa-3x">
-                  <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                  <i class="fas fa-tasks fa-stack-1x fa-inverse"></i>
-                </span>
-                <h4 class="mt-4">Programming</h4>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3 pb-4 mb-md-0">
-            <div class="card">
-              <div class="card-body">
-                <span class="fa-stack fa-3x">
-                  <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                  <i class="fas fa-pencil-alt fa-stack-1x fa-inverse"></i>
-                </span>
-                <h4 class="mt-4">Design</h4>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3 pb-4 mb-md-0">
-            <div class="card">
-              <div class="card-body">
-                <span class="fa-stack fa-3x">
-                  <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                  <i class="fas fa-bullhorn fa-stack-1x fa-inverse"></i>
-                </span>
-                <h4 class="mt-4">Marketing</h4>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3 pb-4 mb-md-0">
-            <div class="card">
-              <div class="card-body">
-                <span class="fa-stack fa-3x">
-                  <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                  <i class="fas fa-hands-helping fa-stack-1x fa-inverse"></i>
-                </span>
-                <h4 class="mt-4">Support</h4>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Details callout -->
-    <section id="details" class="bg-purple-meetup1">
-      <div class="row d-flex justify-content-center">
-        <div class="col-9 col-lg-6 text-light text-center">
-          <h1 class="mb-3">The bottom line</h1>
-          <p>If you're a meetup, class, hackathon, networking event, etc. that is helping your community <strong>for free</strong>, we're here to help. After all, our mission is to see people start learning tech and thrive not matter if it's through Code Connector meetup or not.</p>
-          <div class="pt-3 row d-flex justify-content-center">
-            <div class="col-sm text-sm-right">
-              <a class="btn btn-light btn-lg mb-3 mb-md-0 mr-0 mr-md-3 shadow js-scroll-trigger" href="#requirements">See requirements</a>
-            </div>
-            <div class="col-sm text-sm-left">
-              <a class="btn btn-light btn-lg shadow js-scroll-trigger" href="#contact">Contact</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Details -->
-    <section id="requirements">
-      <div class="container">
-        <div class="row mb-md-5 pb-3">
-          <div class="col-lg-12 text-center">
-            <h1>What we require</h1>
-          </div>
-        </div>
-        <div class="row text-center d-flex justify-content-center">
-          <div class="col-sm-6 col-lg-3 pb-4 mb-md-0">
-            <div class="card">
-              <div class="card-body">
-                <span class="fa-stack fa-3x">
-                  <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                  <i class="fas fa-award fa-stack-1x fa-inverse"></i>
-                </span>
-                <h4 class="mt-4">Proof</h4>
-                <p class="text-muted">It's not necessary for your group to be a non-profit or anything like that, but we need to see that you've been helping people in you community and at no direct cost.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-3 pb-4 mb-md-0">
-            <div class="card">
-              <div class="card-body">
-                <span class="fa-stack fa-3x">
-                  <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                  <i class="fas fa-clipboard-list fa-stack-1x fa-inverse"></i>
-                </span>
-                <h4 class="mt-4">Plan</h4>
-                <p class="text-muted">Give us a general idea of what you're planning to do and what you'd like to happen. This will give us a great idea of whether our partnership makes sense.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-3 pb-4 mb-md-0">
-            <div class="card">
-              <div class="card-body">
-                <span class="fa-stack fa-3x">
-                  <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                  <i class="fas fa-thumbs-up fa-stack-1x fa-inverse"></i>
-                </span>
-                <h4 class="mt-4">Recognition</h4>
-                <p class="text-muted">Whether in your event description, a banner image, social media posts, or otherwise, it'd helpful and appreciated to be credited as an event sposnor.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
+    {% block content %}
+    {% endblock content %}
+    {% block contact %}
     <!-- Contact -->
     <section id="contact" class="bg-dark">
       <div class="container">
@@ -252,7 +124,7 @@
             <p class="pt-3 text-light">Whether you're needing assistance or just want to say hello, we'd love to hear form you.</p>
           </div>
         </div>
-        <div class="row py-5 d-flex justify-content-center">
+        <div class="row pt-5 d-flex justify-content-center">
           <div class="col-lg-8 text-center text-white">
             <a class="btn btn-primary btn-lg shadow mr-lg-3" href="http://m.me/codeconnector" target="_blank">
               via Facebook
@@ -264,7 +136,7 @@
         </div>
       </div>
     </section>
-
+    {% endblock contact %}
     <!-- Footer -->
     <footer class="bg-primary">
       <div class="container">
@@ -296,33 +168,8 @@
               </li>
             </ul>
           </div>
-          <!--
-          <div class="col-md-4">
-            <ul class="list-inline quicklinks">
-              <li class="list-inline-item">
-                <a href="#">Privacy Policy</a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">Terms of Use</a>
-              </li>
-            </ul>
-          </div>
-          -->
         </div>
       </div>
     </footer>
-
-    <!-- Bootstrap core JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js" integrity="sha256-H3cjtrm/ztDeuhCN9I4yh4iN2Ybx/y1RM7rMmAesA0k=" crossorigin="anonymous"></script>
-    
-    <!-- Custom scripts for this template -->
-    <script src="/js/custom.js"></script>
-
   </body>
-
 </html>

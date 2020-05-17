@@ -1,0 +1,4 @@
+node_modules
+
+# 11ty build output dir
+dist
