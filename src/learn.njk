@@ -1,0 +1,160 @@
+{% extends "layout.njk" %}
+
+{% set title = "Learn" %}
+
+{% block content %}
+<!-- Header -->
+<header>
+  <div class="overlay"></div>
+  <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+    <source src="/content/videos/talk2.mp4" type="video/mp4">
+  </video>
+  <div class="container h-100">
+    <div class="d-flex h-100 text-center align-items-center">
+      <div class="w-100 text-white">
+        <p class="subheader d-none d-md-inline">There's no need to learn alone</p>
+        <h1 class="header my-md-2">Let's thrive as a community</h1>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Services -->
+<section id="services" class="bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h1>What we offer</h1>
+      </div>
+    </div>
+    <div class="row py-5 text-center justify-content-center">
+      <div class="col-md-6 col-lg-4 pb-4 mb-md-0">
+        <div class="card shadow">
+          <div class="card-body">
+            <span class="fa-stack fa-3x">
+              <i class="fas fa-circle fa-stack-2x text-primary"></i>
+              <i class="fas fa-globe-americas fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="mt-4 text-primary">FREE</h4>
+            <h3 class="mb-4">Online community</h3>
+            <a class="btn btn-primary js-scroll-trigger" href="#online">Sign up</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 pb-4 mb-md-0">
+        <div class="card shadow">
+          <div class="card-body">
+            <span class="fa-stack fa-3x">
+              <i class="fas fa-circle fa-stack-2x text-primary"></i>
+              <i class="fas fa-users fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="mt-4 text-primary">FREE</h4>
+            <h3 class="mb-4">Local meetups</h3>
+            <a class="btn btn-primary js-scroll-trigger" href="#meetups">Join</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Online Community -->
+
+<section id="online" class="bg-primary">
+  <div class="container">
+    <div class="row justify-content-center mb-md-5">
+      <div class="col-lg-7 text-center">
+        <h1 class="text-light">Our online community</h1>
+      </div>
+    </div>
+    <div class="row py-5 d-flex align-items-center justify-content-center">
+      <div class="col-md-4 mr-lg-4 order-2 order-md-1 text-center text-md-left text-light">
+        <h1>Easy</h1>
+        <h5>ACCESS</h5>
+        <p>Thanks to Slack, no matter the device or system, help is always one click and message away.</p>
+      </div>
+      <div class="col-md-6 order-1 order-md-2">
+        <img src="/content/images/slack/5by7/1.jpg" class="img-fluid mb-4 mb-md-0 rounded" alt="Attendees having group discussion">
+      </div>
+    </div>
+    <div class="row py-5 d-flex align-items-center justify-content-center">
+      <div class="col-md-6">
+        <img src="/content/images/people/3.jpg" class="img-fluid mb-4 mb-md-0 rounded" alt="Three attendees seated at a couch check out what the middle attendee is doing on her laptop">
+      </div>
+      <div class="col-md-4 ml-md-4 text-center text-md-left text-light">
+        <h1>Open</h1>
+        <h5>GROUPS</h5>
+        <p>Looking to connect with a group of beginners, mentors, and leaders? Whether we've already got things set up in your local area or not, we have got lots of groups for you to dive into.</p>
+      </div>
+    </div>
+    <div class="row py-5 d-flex align-items-center justify-content-center">
+      <div class="col-md-4 mr-md-4 order-2 order-md-1 text-center text-md-left text-light">
+        <h1>Helpful</h1>
+        <h5>PEOPLE & JOB LEADS</h5>
+        <p>The overall mission of this platform is to set up a cooperative place that pushes people to succeed. From study buddies to job lead motivation, help is on its way!</p>
+      </div>
+      <div class="col-md-6 order-1 order-md-2">
+        <img src="/content/images/people/2.jpg" class="img-fluid mb-4 mb-md-0 rounded" alt="Top down view of attendee coding on her laptop">
+      </div>
+    </div>
+    <div class="row text-center justify-content-center my-md-5 my-2 pt-md-5">
+      <div class="col-md-6 mb-md-0">
+        <a class="btn btn-xl btn-light shadow" href="https://join.slack.com/t/code-connector/shared_invite/enQtNTAwNzUxMjc5OTQyLWMxODIzNTg1ZDdlNGZlMTQ3ZjQwYTZhMTQ4MWMyNTc1ODFmNTIzZjFkNTAzMTJiMGNhMTM0OTU3OWFmN2FhMWU" target="_blank">Join the community</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Meetups -->
+<section id="meetups" class="bg-light">
+  <div class="container">
+    <div class="row justify-content-center mb-md-5">
+      <div class="col-lg-7 text-center">
+        <h1>Local meetups</h1>
+      </div>
+    </div>
+    <div class="row py-5 d-flex align-items-center justify-content-center">
+      <div class="col-md-6">
+        <img src="/content/images/meetups/color/5by7/8.jpg" class="img-fluid mb-4 mb-md-0 rounded" alt="Attendees standing for group photo">
+      </div>
+      <div class="col-md-4 ml-lg-4 text-center text-md-left">
+        <p class="text-muted">These gatherings aren't class, so there won't be a teacher, but it is your opportunity to talk with other people and get help jumpstarting your learning process or with a programming lesson / personal project you've been working on.</p>
+      </div>
+    </div>
+    <div class="row justify-content-center py-5">
+      <div class="col-md-8 col-lg-6">
+        <div class="card shadow">
+          <div class="p-4 p-md-5 text-center">
+            <h2 class="text-center mb-5">Upcoming events</h2>
+            <!--
+            <div class="embed-responsive embed-responsive-16by9 mb-4">
+              <iframe class="embed-responsive-item" src="https://calendar.google.com/calendar/b/1/embed?showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=fgcsik1e9m63qqnc4qehgernk8%40group.calendar.google.com&amp;color=%23ffffff&amp;src=mbfvofsq427ncq7huc0otcgb48%40group.calendar.google.com&amp;color=%23ffffff&amp;src=ebk4jgggi3m4so9vss1mujrdng%40group.calendar.google.com&amp;color=%23ffffff&amp;src=7hg2nohh1qkbbomb0j0kipbm04%40group.calendar.google.com&amp;color=%23ffffff&amp;ctz=America%2FNew_York" width="800" height="400" scrolling="yes"></iframe>
+            </div>
+            -->
+            <a class="btn btn-primary" href="http://www.facebook.com/codeconnective/events" target="_blank">Facebook</a>
+            <a class="btn btn-primary" href="https://www.eventbrite.com/o/code-connector-15650145492" target="_blank">Eventbrite</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- No event callout -->
+<section id="noevent-callout" class="bg-purple-meetup1">
+  <div class="row justify-content-center">
+    <div class="col-9 col-lg-6 text-light text-center">
+      <h2 class="mb-3">Not seeing an event in your area?</h2>
+      <p>No worries! Join our online community and/or send word our way and, with your help, we'll work to create a meetup in your local community.</p>
+      <div class="pt-3 row d-flex justify-content-center">
+        <div class="col-sm text-sm-right">
+          <a class="btn btn-light btn-lg mb-3 mb-md-0 mr-0 mr-md-3 shadow js-scroll-trigger" href="#online">Join</a>
+        </div>
+        <div class="col-sm text-sm-left">
+          <a class="btn btn-light btn-lg shadow js-scroll-trigger" href="#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock content %}

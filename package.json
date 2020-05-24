@@ -1,0 +1,24 @@
+{
+  "name": "codeconnector-website",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Code Connector community website",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codeconnector/codeconnective.github.io.git"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/codeconnector/codeconnective.github.io/issues"
+  },
+  "homepage": "https://github.com/codeconnector/codeconnective.github.io#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.10.0"
+  }
+}

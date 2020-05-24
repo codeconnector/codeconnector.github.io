@@ -1,0 +1,132 @@
+{% extends "layout.njk" %}
+
+{% set title = "Volunteer" %}
+
+{% block content %}
+<!-- Header -->
+<header>
+  <div class="overlay"></div>
+  <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+    <source src="/content/videos/workshop2.mp4" type="video/mp4">
+  </video>
+  <div class="container h-100">
+    <div class="d-flex h-100 text-center align-items-center">
+      <div class="w-100 text-white">
+        <p class="subheader d-none d-md-inline">Want to volunteer for or lead one of our events?</p>
+        <h1 class="header my-md-2">We'd love to welcome you to our team</h1>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Needs -->
+<section id="needs" class="bg-light">
+  <div class="container">
+    <div class="row mb-md-5 pb-3">
+      <div class="col-lg-12 text-center">
+        <h1>What we're needing</h1>
+      </div>
+    </div>
+    <div class="row text-center justify-content-center">
+      <div class="col-sm-6 col-lg-3 pb-4">
+        <div class="card">
+          <div class="card-body">
+            <span class="fa-stack fa-4x">
+              <i class="fas fa-circle fa-stack-2x text-primary"></i>
+              <i class="fas fa-hiking fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="mt-4">Leadership</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3 pb-4">
+        <div class="card">
+          <div class="card-body">
+            <span class="fa-stack fa-4x">
+              <i class="fas fa-circle fa-stack-2x text-primary"></i>
+              <i class="fas fa-user-astronaut fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="mt-4">Experience</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3 pb-4">
+        <div class="card">
+          <div class="card-body">
+            <span class="fa-stack fa-4x">
+              <i class="fas fa-circle fa-stack-2x text-primary"></i>
+              <i class="fas fa-hand-holding-heart fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="mt-4">Encouragement</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3 pb-4">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <span class="fa-stack fa-4x">
+              <i class="fas fa-circle fa-stack-2x text-primary"></i>
+              <i class="fas fa-fire fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="mt-4">Inspiration</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Reason -->
+<section id="reason">
+  <div class="container">
+    <div class="row pb-5">
+      <div class="col-lg-12 text-center">
+        <h1>Where we help</h1>
+      </div>
+    </div>
+    <div class="row py-5 d-flex align-items-center justify-content-center">
+        <div class="col-md-4 mr-lg-4 order-2 order-md-1 text-center text-md-left">
+          <h1 class="text-primary">Meetups</h1>
+          <p class="text-muted">Whether it's through leadership or through assistance, we're always looking for people to step up and be there to help people meet in their local community.</p>
+        </div>
+        <div class="col-md-6 order-1 order-md-2">
+          <img src="/content/images/meetups/color/5by7/2.jpg" class="img-fluid mb-4 mb-md-0 rounded" alt="Attendees gathered around table watching presentation">
+        </div>
+    </div>
+    <div class="row py-5 d-flex align-items-center justify-content-center">
+      <div class="col-md-6">
+        <img src="/content/images/meetups/color/5by7/17.jpg" class="img-fluid mb-4 mb-md-0 rounded" alt="Attendees in class session">
+      </div>
+      <div class="col-md-4 ml-md-4 text-center text-md-left">
+        <h1 class="text-primary">Classes</h1>
+        <p class="text-muted">We may not be a recruiting agency, university, or bootcamp, but we do like setting communities up with easy-to-understand, relative, and affordable classes. If you're looking to teach, we'd love to give you that opportunity.</p>
+      </div>
+    </div>
+    <div class="row pt-5 d-flex align-items-center justify-content-center">
+      <div class="col-md-4 mr-md-4 order-2 order-md-1 text-center text-md-left">
+        <h1 class="text-primary">Online</h1>
+        <p class="text-muted">Even you're not able to attend meetups in your local, your drive to help and wisedom could help someone in need through our online chat community.</p>
+      </div>
+      <div class="col-md-6 order-1 order-md-2">
+        <img src="/content/images/slack/5by7/2.jpg" class="img-fluid mb-4 mb-md-0 rounded" alt="Stock photo of Slack being used on laptop and phone">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Bottom line -->
+<section id="bottom-line" class="bg-purple-convo3 text-light">
+  <div class="container">
+    <div class="row pb-5 d-flex justify-content-center">
+      <div class="col-lg-6 text-center">
+        <h1>The bottom line</h1>
+      </div>
+    </div>
+    <div class="row d-flex justify-content-center">
+      <div class="col-lg-6 text-center">
+        <p>Whether you're a tech professional, someone that's interested in seeing your local tech community grow, or you're simply tired of building things alone - we'd love to welcome you into the Code Connector team.</p>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock content %}
