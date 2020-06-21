@@ -23,7 +23,7 @@
     <!-- Favicon -->
 		<link rel="shortcut icon" href="/content/favicon.ico">
 
-    <title>{{ title }}</title>
+    <title>{{ page.title }}</title>
 
     <!-- Bootstrap core CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -35,9 +35,6 @@
 
     <!-- Custom styles -->
     <link href="/css/core.css" rel="stylesheet">
-    {% block styles %}
-    <link href="/css/secondary.css" rel="stylesheet">
-    {% endblock %}
 
     <!-- Bootstrap core JavaScript -->
     <script defer src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -49,8 +46,6 @@
 
     <!-- Custom scripts for this template -->
     <script defer src="/js/custom.js"></script>
-    {% block javascript %}
-    {% endblock %}
   </head>
 
   <body id="page-top">
@@ -112,9 +107,9 @@
         </div>
       </div>
     </div>
-    {% block content %}
-    {% endblock content %}
-    {% block contact %}
+  
+    {{ content }}
+
     <!-- Contact -->
     <section id="contact" class="bg-dark">
       <div class="container">
@@ -136,7 +131,7 @@
         </div>
       </div>
     </section>
-    {% endblock contact %}
+
     <!-- Footer -->
     <footer class="bg-primary">
       <div class="container">

@@ -1,36 +1,8 @@
-{% extends "layout.njk" %}
-
-{% set title = "Code Connector" %}
-
-{% block styles %}
-<link href="/css/primary.css" rel="stylesheet">
-{% endblock styles %}
-
-{% block javascript %}
-<!-- Typed JavaScript -->
-<script defer src="/js/typed.js"></script>
-<script>
-window.addEventListener('DOMContentLoaded', (event) => {
-    var typed = new Typed("#typed", {
-      strings: ['a lonely', 'a frustrating', 'an expensive', 'an aimless', 'an exhausting', 'a difficult'],
-      typeSpeed: 50,
-      backSpeed: 50,
-      backDelay: 1000,
-      startDelay: 0,
-      showCursor: true,
-      loop: true,
-    });
-});  
-</script>
-
-<!-- Plugin JavaScript -->
-<script defer src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
-<script defer src="/js/partner-slider.js"></script>
-{% endblock javascript %}
-
-{% block content %}
+---
+title: Code Connector
+---
 <!-- Header -->
-<header>
+<header class="landing">
   <div class="overlay"></div>
   <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
     <source src="/content/videos/workshop1.mp4" type="video/mp4">
@@ -557,4 +529,22 @@ window.addEventListener('DOMContentLoaded', (event) => {
     </div>
   </div>
 </section>
-{% endblock content %}
+
+<script defer src="/js/typed.js"></script>
+<script>
+window.addEventListener('DOMContentLoaded', (event) => {
+    var typed = new Typed("#typed", {
+      strings: ['a lonely', 'a frustrating', 'an expensive', 'an aimless', 'an exhausting', 'a difficult'],
+      typeSpeed: 50,
+      backSpeed: 50,
+      backDelay: 1000,
+      startDelay: 0,
+      showCursor: true,
+      loop: true,
+    });
+});  
+</script>
+
+<!-- Plugin JavaScript -->
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+<script defer src="/js/partner-slider.js"></script>

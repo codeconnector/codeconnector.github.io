@@ -1,4 +1,3 @@
-node_modules
-
-# 11ty build output dir
-dist
+_site
+.sass-cache
+.jekyll-metadata
