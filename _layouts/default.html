@@ -52,16 +52,24 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Code Connector</a>
+        <a class="navbar-brand" href="/">Code Connector</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="d-none d-md-inline">Menu</span><span class="d-inline d-md-none"><i class="fas fa-bars"></i></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="/learn" data-target="#">Learn</a>
-            </li>
             <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="getInvolvedNavbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Get Involved</a>
+              <div class="dropdown-menu" aria-labelledby="getInvolvedNavbarDropdownMenuLink">
+                <a class="dropdown-item" href="/learn" data-target="#">Learn to Code</a>
+                <a class="dropdown-item" href="/volunteer" data-target="#">Volunteer</a>
+                <a class="dropdown-item" href="/sponsor" data-target="#">Sponsor</a>
+                <a class="dropdown-item" href="/assistance" data-target="#">Partner</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" data-toggle="modal" data-target="#meetupRequest" href="#">Start a meetup</a>
+              </div>
+            </li>
+            <!-- <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="locationsNavbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Events
               </a>
@@ -74,19 +82,12 @@
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" data-toggle="modal" data-target="#meetupRequest" href="#">Start a meetup</a>
               </div>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="supportNavbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Support
-              </a>
-              <div class="dropdown-menu" aria-labelledby="supportNavbarDropdownMenuLink">
-                <a class="dropdown-item" href="/volunteer" data-target="#">Get involved</a>
-                <a class="dropdown-item" href="/sponsor" data-target="#">Through sponsorship</a>
-                <a class="dropdown-item" href="/assistance" data-target="#">Receive meetup assistance</a>
-              </div>
-            </li>
+            </li>-->
             <li class="nav-item">
               <a class="nav-link" href="/about" data-target="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/code-of-conduct" data-target="#">Code of Conduct</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
