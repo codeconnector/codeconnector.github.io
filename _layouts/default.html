@@ -66,7 +66,7 @@
                 <a class="dropdown-item" href="/sponsor" data-target="#">Sponsor</a>
                 <a class="dropdown-item" href="/assistance" data-target="#">Partner</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" data-toggle="modal" data-target="#meetupRequest" href="#">Start a meetup</a>
+                <a class="dropdown-item" data-toggle="modal" data-target="#meetupRequest" href="#" onclick="insertMeetupIframe()">Start a meetup</a>
               </div>
             </li>
             <!-- <li class="nav-item dropdown">
@@ -101,8 +101,7 @@
       <div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 690px">
         <div class="modal-content">
           <div class="modal-body">
-            <div class="embed-responsive" style="padding-top: 90%;">
-              <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdAhGDdmwoTbGKywbp881duzGgjDFxceVdk9UTdq9SxBPp6tg/viewform?embedded=true" width="640" height="715" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+            <div class="embed-responsive" style="padding-top: 90%;" id="meetupIframeContainer">
             </div>
           </div>
         </div>

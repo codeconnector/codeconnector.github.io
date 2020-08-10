@@ -39,3 +39,24 @@
   // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);
 })(jQuery); // End of use strict
+
+// This is used by the "Start a Meetup" navigation link.
+// The purpose of this code is to avoid loading an iframe with all of the google website code (lots of requests)
+// until it is absolutely needed. This improves our page load times and has the added benefit of avoiding
+// google's trackers unless they are absolutely needed.
+window.isMeetupIframeInserted = false;
+function insertMeetupIframe() {
+  if (!window.isMeetupIframeInserted) {
+    var meetupIframe = document.createElement('iframe');
+    meetupIframe.setAttribute('src', 'https://docs.google.com/forms/d/e/1FAIpQLSdAhGDdmwoTbGKywbp881duzGgjDFxceVdk9UTdq9SxBPp6tg/viewform?embedded=true');
+    meetupIframe.setAttribute('width', '640');
+    meetupIframe.setAttribute('height', '715');
+    meetupIframe.setAttribute('frameborder', '0');
+    meetupIframe.setAttribute('marginheight', '0');
+    meetupIframe.setAttribute('marginwidth', '0');
+    meetupIframe.innerHTML = 'Loading...';
+    document.getElementById('meetupIframeContainer').appendChild(meetupIframe);
+
+    window.isMeetupIframeInserted = true;
+  }
+}
