@@ -1,61 +1,53 @@
+- name: Ted Patterson
+  image: ted-p.jpg
+  title: Founder
+  github: tedjpatterson
+  website: https://www.tedpatterson.io
+  linkedin: tedjpatterson
+- name: Lawrence Lockhart
+  image: lawrence-l.jpg
+  title: Volunteer Coordinator /</br>Memphis leader
+  github: onesirian
+  linkedin: lawrencelockhart
+- name: JC Smiley
+  image: jc-s.jpg
+  title: Online Community Manager /</br>Memphis leader
+  github: jcsmileyjr
+  linkedin: jcsmileyjr
+- name: Autumn Ragland
+  image: autumn-ragland.png
+  title: Marketing Manager
+  github: autumn-ragland
+  website: http://autumnragland.com
+  linkedin: autumn-ragland
+- name: Coriano Harris
+  title: Onboarding Manager
+  image: coriano-harris.png
+  github: corianoharris
+  linkedin: corianoharris
+- name: RJ Beers
+  image: rj-beers.jpeg
+  title: Web Manager
+  github: rjbeers
+  website: https://www.rjbeers.com
+  linkedin: rjbeers
 - name: Stefan Hodges-Kluck
   image: stefan-hk.jpg
   title: Knoxville leader
   github: stefanhk31
   website: https://www.stefanhodgeskluck.com
   linkedin: stefanhk31
-- name: Lisa Bamberg
-  image: lisa-b.jpg
-  title: Birmingham Leader
-  linkedin: lisabamberg
-- name: Ray Randle
-  image: ray-r.jpg
-  title: Birmingham leader
-  linkedin: rayrandle
-- name: Chris Finney
-  image: chris-f.jpg
-  title: Birmingham leader
-  github: CFin86
-  linkedin: cfin86
-- name: Jacob Watson
-  image: jacob-w.jpg
-  title: Birmingham Leader
-  linkedin: jacob-watson-007
 - name: Stefan Formentano
   image: stefan-f.jpg
   title: Birmingham Leader
   linkedin: stefan-formentano-8809bb93
-- name: JC Smiley
-  image: jc-s.jpg
-  title: Community Manager /<br>Memphis leader
-  github: jcsmileyjr
-  linkedin: jcsmileyjr
-- name: Ryan Clearly
-  image: ryan-c.jpg
-  title: Memphis Leader
-  linkedin: ryan-cleary-31840058
 - name: Tim Mathis
   image: tim-m.jpg
   title: Memphis leader
   github: timothymathis
   linkedin: tim-mathis-web-developer
-- name: Lawrence Lockhart
-  image: lawrence-l.jpg
-  title: Memphis leader
-  github: onesirian
-  linkedin: lawrencelockhart
 - name: James Q. Quick
   image: james-q.jpg
   title: Memphis leader
   github: jamesqquick
   linkedin: jamesqquick
-- name: Amanda Lane
-  image: amanda-l.jpg
-  title: Project Manager
-  linkedin: amandaplane
-- name: Ted Patterson
-  image: ted-p.jpg
-  title: General Manager /<br>Lehigh Valley leader
-  github: tedjpatterson
-  website: https://www.tedpatterson.io
-  linkedin: tedjpatterson
