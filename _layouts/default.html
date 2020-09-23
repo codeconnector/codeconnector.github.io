@@ -1,99 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Meta Data -->
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Connecting adults with free coding + career resources, workshops & experiences">
+    <meta name="keywords" content="free code programming tech technology STEM education help training Memphis Knoxville Tennessee Birmingham Montgomery Alabama US USA">
+    <meta name="author" content="Ted Patterson">
 
-<head>
-  <!-- Meta Data -->
-  <meta http-equiv="content-type" content="text/html;charset=UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Connecting adults with free coding + career resources, workshops & experiences">
-  <meta name="keywords"
-    content="free code programming tech technology STEM education help training Memphis Knoxville Tennessee Birmingham Montgomery Alabama US USA">
-  <meta name="author" content="Ted Patterson">
+    <meta property="og:title" content="Code Connector - {{ page.title }}">
+    <meta property="og:description" content="Connecting adults with free coding + career resources, workshops & experiences">
+    <meta property="og:image" content="/content/link_preview.jpg">
+    <meta property="og:url" content="https://www.codeconnective.com">
 
-  <meta property="og:title" content="Code Connector - {{ page.title }}">
-  <meta property="og:description"
-    content="Connecting adults with free coding + career resources, workshops & experiences">
-  <meta property="og:image" content="/content/link_preview.jpg">
-  <meta property="og:url" content="https://www.codeconnective.com">
+    <meta name="twitter:title" content="Code Connector - {{ page.title }}">
+    <meta name="twitter:description" content="Connecting adults with free coding + career resources, workshops & experiences">
+    <meta name="twitter:image" content="/content/link_preview.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@codeconnector_">
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/content/favicon.ico">
 
-  <meta name="twitter:title" content="Code Connector - {{ page.title }}">
-  <meta name="twitter:description"
-    content="Connecting adults with free coding + career resources, workshops & experiences">
-  <meta name="twitter:image" content="/content/link_preview.jpg">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:site" content="@codeconnector_">
+    <title>Code Connector - {{ page.title }}</title>
 
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="/content/favicon.ico">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-  <title>Code Connector - {{ page.title }}</title>
+    <!-- Custom fonts for this template -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:900">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,600,900&display=swap">
 
-  <!-- Bootstrap core CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="/css/core.css">
 
-  <!-- Custom fonts for this template -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:900">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,600,900&display=swap">
+    <script defer src="https://use.fontawesome.com/releases/v5.13.1/js/all.js" data-auto-replace-svg="nest"></script>
+    
+    <!-- Bootstrap core JavaScript -->
+    <script defer src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    
+    <!-- Plugin JavaScript -->
+    <script defer src="https://cdn.jsdelivr.net/npm/jquery.easing@1.4.1/jquery.easing.min.js" integrity="sha256-H3cjtrm/ztDeuhCN9I4yh4iN2Ybx/y1RM7rMmAesA0k=" crossorigin="anonymous"></script>
 
-  <!-- Custom styles -->
-  <link rel="stylesheet" href="/css/core.css">
+    <!-- Custom scripts for this template -->
+    <script defer src="/js/custom.js"></script>
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-174962958-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-174962958-1');
+    </script>
+  </head>
 
-  <script defer src="https://use.fontawesome.com/releases/v5.13.1/js/all.js" data-auto-replace-svg="nest"></script>
-
-  <!-- Bootstrap core JavaScript -->
-  <script defer src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"
-    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-    crossorigin="anonymous"></script>
-  <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-    crossorigin="anonymous"></script>
-
-  <!-- Plugin JavaScript -->
-  <script defer src="https://cdn.jsdelivr.net/npm/jquery.easing@1.4.1/jquery.easing.min.js"
-    integrity="sha256-H3cjtrm/ztDeuhCN9I4yh4iN2Ybx/y1RM7rMmAesA0k=" crossorigin="anonymous"></script>
-
-  <!-- Custom scripts for this template -->
-  <script defer src="/js/custom.js"></script>
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-174962958-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'UA-174962958-1');
-  </script>
-</head>
-
-<body id="page-top">
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand" href="/">Code Connector</a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-        data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-        aria-label="Toggle navigation">
-        <span class="d-none d-md-inline">Menu</span><span class="d-inline d-md-none"><i class="fas fa-bars"></i></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="getInvolvedNavbarDropdownMenuLink" role="button"
-              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Get Involved</a>
-            <div class="dropdown-menu" aria-labelledby="getInvolvedNavbarDropdownMenuLink">
-              <a class="dropdown-item" href="/learn" data-target="#">Learn to Code</a>
-              <a class="dropdown-item" href="/volunteer" data-target="#">Volunteer</a>
-              <a class="dropdown-item" href="/sponsor" data-target="#">Sponsor</a>
-              <a class="dropdown-item" href="/assistance" data-target="#">Partner</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" data-toggle="modal" data-target="#meetupRequest" href="#"
-                onclick="insertMeetupIframe()">Start a meetup</a>
-            </div>
-          </li>
-          <!-- <li class="nav-item dropdown">
+  <body id="page-top">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand" href="/">Code Connector</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="d-none d-md-inline">Menu</span><span class="d-inline d-md-none"><i class="fas fa-bars"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="getInvolvedNavbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Get Involved</a>
+              <div class="dropdown-menu" aria-labelledby="getInvolvedNavbarDropdownMenuLink">
+                <a class="dropdown-item" href="/learn" data-target="#">Learn to Code</a>
+                <a class="dropdown-item" href="/volunteer" data-target="#">Volunteer</a>
+                <a class="dropdown-item" href="/sponsor" data-target="#">Sponsor</a>
+                <a class="dropdown-item" href="/assistance" data-target="#">Partner</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" data-toggle="modal" data-target="#meetupRequest" href="#" onclick="insertMeetupIframe()">Start a meetup</a>
+              </div>
+            </li>
+            <!-- <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="locationsNavbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Events
               </a>
@@ -107,103 +92,93 @@
                 <a class="dropdown-item" data-toggle="modal" data-target="#meetupRequest" href="#">Start a meetup</a>
               </div>
             </li>-->
-          <li class="nav-item">
-            <a class="nav-link" href="/about" data-target="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/code-of-conduct" data-target="#">Code of Conduct</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <!-- Start A Meetup modal -->
-  <div class="modal fade" id="meetupRequest" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-    aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 690px">
-      <div class="modal-content">
-        <div class="modal-body">
-          <div class="embed-responsive" style="padding-top: 90%;" id="meetupIframeContainer">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  {{ content }}
-
-  <!-- Contact -->
-  <section id="contact" class="bg-dark">
-    <div class="container">
-      <div class="row d-flex justify-content-center">
-        <div class="col-lg-6 text-center">
-          <h1 class="text-light">Send word our way</h1>
-          <p class="pt-3 text-light">Whether you're needing assistance or just want to say hello, we'd love to hear form
-            you.</p>
-        </div>
-      </div>
-      <div class="row pt-5 d-flex justify-content-center">
-        <div class="col-lg-8 text-center text-white">
-          <a class="btn btn-primary btn-lg shadow mr-lg-3" href="https://m.me/codeconnector" target="_blank"
-            rel="noopener">
-            via Facebook
-          </a>
-          <a class="btn btn-primary btn-lg shadow" href="https://twitter.com/codeconnector_" target="_blank"
-            rel="noopener">
-            via Twitter
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-primary">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-md-6 text-white">
-          <span class="copyright">Made with grit in Memphis, TN &copy; 2019</span>
-        </div>
-        <div class="col-md-6">
-          <ul class="list-inline social-buttons">
-            <li class="list-inline-item">
-              <a href="https://www.facebook.com/codeconnector" target="_blank" rel="noopener"
-                aria-label="Code Connector's Facebook">
-                <i class="fab fa-facebook-f"></i>
-              </a>
+            <li class="nav-item">
+              <a class="nav-link" href="/about" data-target="#">About</a>
             </li>
-            <li class="list-inline-item">
-              <a href="https://twitter.com/codeconnector_" target="_blank" rel="noopener"
-                aria-label="Code Connector's Twitter">
-                <i class="fab fa-twitter" title="Navigate to Twitter"></i>
-              </a>
+            <li class="nav-item">
+              <a class="nav-link" href="/code-of-conduct" data-target="#">Code of Conduct</a>
             </li>
-            <li class="list-inline-item">
-              <a href="https://www.linkedin.com/company/code-connective/" target="_blank" rel="noopener"
-                aria-label="Code Connector's LinkedIn">
-                <i class="fab fa-linkedin-in"></i>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="https://www.eventbrite.com/o/code-connector-15650145492" target="_blank" rel="noopener"
-                aria-label="Code Connector's Eventbrite">
-                <i class="fas fa-calendar-alt"></i>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="https://www.youtube.com/channel/UCILxIdh3uyw64JjtdRmdtVg" target="_blank" rel="noopener"
-                aria-label="Code Connector's Youtube">
-                <i class="fab fa-youtube"></i>
-              </a>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
       </div>
+    </nav>
+    <!-- Start A Meetup modal -->
+    <div class="modal fade" id="meetupRequest" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 690px">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="embed-responsive" style="padding-top: 90%;" id="meetupIframeContainer">
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </footer>
-</body>
+  
+    {{ content }}
 
+    <!-- Contact -->
+    <section id="contact" class="bg-dark">
+      <div class="container">
+        <div class="row d-flex justify-content-center">
+          <div class="col-lg-6 text-center">
+            <h1 class="text-light">Send word our way</h1>
+            <p class="pt-3 text-light">Whether you're needing assistance or just want to say hello, we'd love to hear form you.</p>
+          </div>
+        </div>
+        <div class="row pt-5 d-flex justify-content-center">
+          <div class="col-lg-8 text-center text-white">
+            <a class="btn btn-primary btn-lg shadow mr-lg-3" href="https://m.me/codeconnector" target="_blank" rel="noopener">
+              via Facebook
+            </a>
+            <a class="btn btn-primary btn-lg shadow" href="https://twitter.com/codeconnector_" target="_blank" rel="noopener">
+              via Twitter
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 text-white">
+            <span class="copyright">Made with grit in Memphis, TN &copy; 2019</span>
+          </div>
+          <div class="col-md-6">
+            <ul class="list-inline social-buttons">
+              <li class="list-inline-item">
+                <a href="https://www.facebook.com/codeconnector" target="_blank" rel="noopener" aria-label="Code Connector's Facebook">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://twitter.com/codeconnector_" target="_blank" rel="noopener" aria-label="Code Connector's Twitter">
+                  <i class="fab fa-twitter" title="Navigate to Twitter"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.linkedin.com/company/code-connective/" target="_blank" rel="noopener" aria-label="Code Connector's LinkedIn">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.eventbrite.com/o/code-connector-15650145492" target="_blank" rel="noopener" aria-label="Code Connector's Eventbrite">
+                  <i class="fas fa-calendar-alt"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.youtube.com/channel/UCILxIdh3uyw64JjtdRmdtVg" target="_blank" rel="noopener" aria-label="Code Connector's Youtube">
+                  <i class="fab fa-youtube"></i>
+                </a>
+            </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
