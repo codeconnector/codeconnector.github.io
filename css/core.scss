@@ -940,4 +940,9 @@ header {
       font-size: 1.35rem;
     }
   }
+
+  #journey::before {
+    content: "\a";
+    white-space: pre;
+  }
 }
