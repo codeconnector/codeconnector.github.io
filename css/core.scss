@@ -107,6 +107,12 @@ a.btn:hover {
   font-family: 'Source Code Pro', monospace;
 }
 
+@media (max-width: 447px){ 
+  .btn-lg { 
+    margin: 1rem;
+   } 
+}
+
 .btn-xl {
   font-size: 25px;
   padding: 20px 70px;
