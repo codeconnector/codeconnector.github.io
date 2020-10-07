@@ -141,6 +141,13 @@ ul.social-buttons {
   margin-bottom: 0;
 }
 
+@media (max-width:417px){
+  ul.social-buttons {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 ul.social-buttons li a {
   cursor: pointer;
   font-size: 20px;
